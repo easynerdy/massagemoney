@@ -1,4 +1,5 @@
 import React from 'react';
+import PeopleContainer from './PeopleContainer';
 
 export default class ClientForm extends React.Component {
 
@@ -13,7 +14,10 @@ export default class ClientForm extends React.Component {
         <label>Name</label>
         <input/>
         <button onClick={this.handleSubmit}>Submit</button>
-      </form> 
+        
+      </form>
+                    <PeopleContainer/>
+ 
     </div>
   }
 };

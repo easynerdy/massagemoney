@@ -22,7 +22,6 @@ class App extends Component {
                 <Route path="/clients/new" component={ClientForm}/>
                 <Route path="/clients/:id" component={Client}/>
               </Switch>
-              <PeopleContainer/>
           </div>
         </MuiThemeProvider>
       </Router>
