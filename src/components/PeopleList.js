@@ -11,8 +11,4 @@ const PeopleList = ({people}) => {
   );
 };
 
-PeopleList.propTypes = {
-  people: PropTypes.array.isRequired
-};
-
 export default PeopleList;

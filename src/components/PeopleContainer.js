@@ -26,11 +26,6 @@ class PeopleContainer extends Component {
   }
 }
 
-PeopleContainer.propTypes = {
-  people: PropTypes.array.isRequired,
-  actions: PropTypes.object.isRequired
-};
-
 function mapStateToProps(state, props) {
   return {
     people: state.people

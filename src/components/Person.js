@@ -8,8 +8,4 @@ const Person = ({person}) => {
   );
 };
 
-Person.propTypes = {
-  person: PropTypes.object.isRequired
-};
-
 export default Person;

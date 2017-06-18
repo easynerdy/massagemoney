@@ -37,8 +37,4 @@ class PersonInput extends Component {
   }
 }
 
-PersonInput.propTypes = {
-  addPerson: PropTypes.func.isRequired
-};
-
 export default PersonInput;
