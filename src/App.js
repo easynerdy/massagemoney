@@ -16,12 +16,7 @@ class App extends Component {
         <MuiThemeProvider>
           <div className="App">
               <MainMenu/>
-              <Switch>
-                <Route exact path="/" component={Home}/>
-                <Route exact path="/clients" component={Clients}/>
-                <Route path="/clients/new" component={ClientForm}/>
-                <Route path="/clients/:id" component={Client}/>
-              </Switch>
+              <PeopleContainer/>
           </div>
         </MuiThemeProvider>
       </Router>

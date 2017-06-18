@@ -16,7 +16,6 @@ export default class ClientForm extends React.Component {
         <button onClick={this.handleSubmit}>Submit</button>
         
       </form>
-                    <PeopleContainer/>
  
     </div>
   }
