@@ -7,6 +7,7 @@ export default class ClientForm extends React.Component {
       <form>
         <label>Name</label>
         <input/>
+        <button>Submit</button>
       </form> 
     </div>
   }

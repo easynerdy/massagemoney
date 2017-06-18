@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import MainMenu from './components/MainMenu';
 import './App.css';
+import MainMenu from './components/MainMenu';
+import Home from './components/Home';
+import Client from './components/Client';
 import Clients from './components/Clients';
 import ClientForm from './components/ClientForm';
 
@@ -13,8 +15,12 @@ class App extends Component {
         <MuiThemeProvider>
           <div className="App">
               <MainMenu/>
-              <Route exact path="/clients" component={Clients}/>
-              <Route path="/clients/new" component={ClientForm}/>
+              <Switch>
+                <Route exact path="/" component={Home}/>
+                <Route exact path="/clients" component={Clients}/>
+                <Route path="/clients/new" component={ClientForm}/>
+                <Route path="/clients/:id" component={Client}/>
+                </Switch>
           </div>
         </MuiThemeProvider>
       </Router>
