@@ -12,7 +12,7 @@ export default class ClientForm extends React.Component {
       <form>
         <label>Name</label>
         <input/>
-        <button onClick={this.handleSubmit()}>Submit</button>
+        <button onClick={this.handleSubmit}>Submit</button>
       </form> 
     </div>
   }

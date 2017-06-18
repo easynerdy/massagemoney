@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Client from './components/Client';
 import Clients from './components/Clients';
 import ClientForm from './components/ClientForm';
+import PeopleContainer from './components/PeopleContainer';
 
 class App extends Component {
   render() {
@@ -20,7 +21,8 @@ class App extends Component {
                 <Route exact path="/clients" component={Clients}/>
                 <Route path="/clients/new" component={ClientForm}/>
                 <Route path="/clients/:id" component={Client}/>
-                </Switch>
+              </Switch>
+              <PeopleContainer/>
           </div>
         </MuiThemeProvider>
       </Router>
